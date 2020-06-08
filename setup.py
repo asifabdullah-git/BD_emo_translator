@@ -15,5 +15,5 @@ setup(
     packages=['BD_emo_translator'],
     url="https://github.com/asifabdullah-git/BD_emo_translator",
     zip_safe=True,
-    download_url="https://github.com/asifabdullah-git/BD_emo_translator.git",
+    download_url="https://github.com/asifabdullah-git/BD_emo_translator/archive/1.0.0.tar.gz",
 )
