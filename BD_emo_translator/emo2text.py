@@ -1,9 +1,9 @@
 import re
-import bangla_emo_unicode
-import codecs
+import emo_code
+
 
 #bangla_emo_unicode = codecs.open("bangla_emo_unicode.py", "r", "utf-8")
-f = codecs.open("bangla_emo_unicode.py", "r", "utf-8")
+#f = codecs.open("bangla_emo_unicode.py", "r", "utf-8")
 
 __all__ = ['emoji', 'emoticons']
 
@@ -21,7 +21,7 @@ def emoji(string):
             if ej in bangla_emo_unicode.BD_UNICODE_EMO:
                 try:
                     __value.append(ej)
-                    __mean.append(bangla_emo_unicode.BD_UNICODE_EMO[ej])
+                    __mean.append(emo_code.BD_UNICODE_EMO[ej])
                     __location.append([pos, pos])
                 except Exception as e:
                     flag = False
@@ -49,7 +49,7 @@ def emoticons(string):
     __entities = []
     flag = True
     try:
-        pattern = u'(' + u'|'.join(k for k in bangla_emo_unicode.EMOTICONS) + u')'
+        pattern = u'(' + u'|'.join(k for k in emo_code.EMOTICONS) + u')'
         __entities = []
         __value = []
         __location = []
@@ -60,7 +60,7 @@ def emoticons(string):
 
         __mean = []
         for each in __value:
-            __mean.append(bangla_emo_unicode.EMOTICONS_EMO[each])
+            __mean.append(emo_code.EMOTICONS_EMO[each])
 
         if len(__value) < 1:
             flag = False
