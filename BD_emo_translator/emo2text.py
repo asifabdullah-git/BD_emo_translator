@@ -18,7 +18,7 @@ def emoji(string):
     try:
         pro_string = str(string)
         for pos, ej in enumerate(pro_string):
-            if ej in bangla_emo_unicode.BD_UNICODE_EMO:
+            if ej in emo_code.BD_UNICODE_EMO:
                 try:
                     __value.append(ej)
                     __mean.append(emo_code.BD_UNICODE_EMO[ej])
