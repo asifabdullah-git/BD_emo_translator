@@ -5,7 +5,7 @@ from setuptools import setup
 
 setup(
     name='BD_emo_translator',
-    version="1.0",
+    version="1.0.0",
     author='Abdullah Al Asif',
     author_email='asifabdullah6@gmail.com',
     description="Emoji and Emoticons detection and convert into Bangla package for Python",
