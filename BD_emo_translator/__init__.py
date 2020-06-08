@@ -12,7 +12,7 @@ from BD_emo_translator.emo_code import EMO_UNICODE
 from BD_emo_translator.emo_code import BD_UNICODE_EMO
 from BD_emo_translator.emo_code import EMOTICONS
  
-__version__ = '1.0'
+__version__ = '1.0.0'
 __author__ = 'Abdullah Al Asif'
 __email__ = 'asifabdullah6@gmail.com'
 __source__ = 'https://github.com/asifabdullah-git/emoji_Translator_bangla'
