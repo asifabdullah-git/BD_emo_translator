@@ -2,7 +2,7 @@ import re
 import emo_code
 
 
-#bangla_emo_unicode = codecs.open("bangla_emo_unicode.py", "r", "utf-8")
+#bangla_emo_unicode = codecs.open("bangla_emo_unicode.py", "r", "utf-8") #we have to use unicode,it doesn't work on ANSI
 #f = codecs.open("bangla_emo_unicode.py", "r", "utf-8")
 
 __all__ = ['emoji', 'emoticons']
@@ -93,4 +93,4 @@ def about():
 
 
 if __name__ == '__main__':
-    test_emo()
+    test_emo() 
